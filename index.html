@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="gemStore"><!--run this module when the document loads-->
+<head>
+    <title>Derp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body class="container" ng-controller="StoreController as store">
+    <div class="product row" ng-repeat="product in store.products">
+        <h3>
+            {{product.name}}
+            <em class="pull-right">${{product.price}}</em>
+        </h3>
+        <button ng-show='product.canPurchase'>Add to Cart</button>
+    </div>
+</body>
+</html>
