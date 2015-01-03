@@ -5,6 +5,25 @@
         this.products = gems;
     });
 
+    app.controller('TabController', function () {
+        this.tab = 1;
+        this.setTab = function (value) {
+            this.tab = value;
+        };
+        this.isSet = function (value) {
+            return this.tab == value;
+        };
+
+    });
+
+    app.controller('GalleryController', function () {
+        this.current = 0;
+        this.setCurrent = function (value) {
+            this.current = value || 0; // value or 0
+        };
+    });
+
+
     var gems = [{
         name: 'Azurite',
         description: "Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",
@@ -15,8 +34,8 @@
         faces: 14,
         images: [
           "http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/images/gem-02.gif",
-          "images/gem-05.gif",
-          "images/gem-09.gif"
+          "http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/images/gem-09.gif",
+          "http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/images/gem-05.gif"
         ],
         reviews: [{
             stars: 5,
@@ -39,8 +58,8 @@
         faces: 12,
         images: [
           "http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/images/gem-01.gif",
-          "images/gem-03.gif",
-          "images/gem-04.gif"
+          "http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/images/gem-03.gif",
+          "http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/images/gem-04.gif"
         ],
         reviews: [{
             stars: 3,
@@ -63,8 +82,8 @@
         faces: 6,
         images: [
           "http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/images/gem-06.gif",
-          "images/gem-07.gif",
-          "images/gem-10.gif"
+          "http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/images/gem-07.gif",
+          "http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/images/gem-10.gif"
         ],
         reviews: [{
             stars: 1,
