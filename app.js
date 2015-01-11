@@ -18,7 +18,6 @@
     app.controller('StoreController', function () {
         this.products = gems;
     });
-
     app.controller("ReviewController", function () {
 
         this.review = {};
@@ -29,14 +28,12 @@
         };
 
     });
-
     app.directive("productDescriptions", function () {
         return {
             restrict: 'E',
             templateUrl: "product-description.html"
         };
     });
-
     app.directive("productReviews", function () {
         return {
             restrict: 'E',
@@ -69,6 +66,20 @@
             controllerAs: "tab"
         };
     });
+
+    app.controller('StoreController', ['$http', function ($http) {
+        var store = this;
+        store.products = [];
+        $http.get('store-products.js').success(function (data) {
+            store.products = data;
+            console.log(store.products);
+        }).error(function (data) {
+            console.log(data);
+        });;
+
+    }]);
+
+
     var gems = [{
         name: 'Azurite',
         description: "Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",
