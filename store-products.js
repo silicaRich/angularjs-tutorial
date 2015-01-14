@@ -8,9 +8,9 @@
     "color": "#CCC",
     "faces": 14,
     "images": [
-      "images/gem-02.gif",
-      "images/gem-05.gif",
-      "images/gem-09.gif"
+          "http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/images/gem-02.gif",
+          "http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/images/gem-09.gif",
+          "http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/images/gem-05.gif"
     ],
     "reviews": []
   },
@@ -23,9 +23,9 @@
     "color": "#EEE",
     "faces": 12,
     "images": [
-      "images/gem-01.gif",
-      "images/gem-03.gif",
-      "images/gem-04.gif"
+          "http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/images/gem-01.gif",
+          "http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/images/gem-03.gif",
+          "http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/images/gem-04.gif"
     ],
     "reviews": []
   },
@@ -38,9 +38,9 @@
     "color": "#000",
     "faces": 6,
     "images": [
-      "images/gem-06.gif",
-      "images/gem-07.gif",
-      "images/gem-08.gif"
+          "http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/images/gem-06.gif",
+          "http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/images/gem-07.gif",
+          "http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/images/gem-10.gif"
     ],
     "reviews": []
   }

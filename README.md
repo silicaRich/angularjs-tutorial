@@ -29,3 +29,7 @@ app.controller(‘SomeController’, [‘$http’, function($http){
 
 // ‘serviceName’, surfaceName as argument
 Basically you are specifing the service that your controllers need ?--- dependency injection
+
+
+To Compile Type Script
+Visual Studio -> Tools -> Nuget Package Manager -> tsc console.ts
